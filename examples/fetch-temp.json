@@ -1,0 +1,225 @@
+{
+    "version": "1.0.0",
+    "nodes": [
+        {
+            "name": "fred",
+            "type": "thing:data",
+            "x": 180,
+            "y": 560,
+            "width": 400,
+            "height": 360,
+            "visible": false,
+            "borderColor": "#000000",
+            "borderWidth": 2,
+            "borderRadius": 0,
+            "backgroundColor": "#ffffff",
+            "opacity": 100,
+            "value": {
+                "@context": [
+                    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+                    {
+                        "@version": "1.1",
+                        "wx": "https://api.weather.gov/ontology#",
+                        "s": "https://schema.org/",
+                        "geo": "http://www.opengis.net/ont/geosparql#",
+                        "unit": "http://codes.wmo.int/common/unit/",
+                        "@vocab": "https://api.weather.gov/ontology#",
+                        "geometry": {
+                            "@id": "s:GeoCoordinates",
+                            "@type": "geo:wktLiteral"
+                        },
+                        "city": "s:addressLocality",
+                        "state": "s:addressRegion",
+                        "distance": {
+                            "@id": "s:Distance",
+                            "@type": "s:QuantitativeValue"
+                        },
+                        "bearing": {
+                            "@type": "s:QuantitativeValue"
+                        },
+                        "value": {
+                            "@id": "s:value"
+                        },
+                        "unitCode": {
+                            "@id": "s:unitCode",
+                            "@type": "@id"
+                        },
+                        "forecastOffice": {
+                            "@type": "@id"
+                        },
+                        "forecastGridData": {
+                            "@type": "@id"
+                        },
+                        "publicZone": {
+                            "@type": "@id"
+                        },
+                        "county": {
+                            "@type": "@id"
+                        }
+                    }
+                ],
+                "id": "https://api.weather.gov/stations/KSFO/observations/2025-03-04T12:56:00+00:00",
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.38,
+                        37.61
+                    ]
+                },
+                "properties": {
+                    "@id": "https://api.weather.gov/stations/KSFO/observations/2025-03-04T12:56:00+00:00",
+                    "@type": "wx:ObservationStation",
+                    "elevation": {
+                        "unitCode": "wmoUnit:m",
+                        "value": 5
+                    },
+                    "station": "https://api.weather.gov/stations/KSFO",
+                    "timestamp": "2025-03-04T12:56:00+00:00",
+                    "rawMessage": "KSFO 041256Z 26004KT 10SM FEW008 BKN020 09/08 A3023 RMK AO2 SLP237 T00940078 $",
+                    "textDescription": "Mostly Cloudy",
+                    "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
+                    "presentWeather": [],
+                    "temperature": {
+                        "unitCode": "wmoUnit:degC",
+                        "value": 9.4,
+                        "qualityControl": "V"
+                    },
+                    "dewpoint": {
+                        "unitCode": "wmoUnit:degC",
+                        "value": 7.8,
+                        "qualityControl": "V"
+                    },
+                    "windDirection": {
+                        "unitCode": "wmoUnit:degree_(angle)",
+                        "value": 260,
+                        "qualityControl": "V"
+                    },
+                    "windSpeed": {
+                        "unitCode": "wmoUnit:km_h-1",
+                        "value": 7.56,
+                        "qualityControl": "V"
+                    },
+                    "windGust": {
+                        "unitCode": "wmoUnit:km_h-1",
+                        "value": null,
+                        "qualityControl": "Z"
+                    },
+                    "barometricPressure": {
+                        "unitCode": "wmoUnit:Pa",
+                        "value": 102370,
+                        "qualityControl": "V"
+                    },
+                    "seaLevelPressure": {
+                        "unitCode": "wmoUnit:Pa",
+                        "value": 102370,
+                        "qualityControl": "V"
+                    },
+                    "visibility": {
+                        "unitCode": "wmoUnit:m",
+                        "value": 16090,
+                        "qualityControl": "C"
+                    },
+                    "maxTemperatureLast24Hours": {
+                        "unitCode": "wmoUnit:degC",
+                        "value": null
+                    },
+                    "minTemperatureLast24Hours": {
+                        "unitCode": "wmoUnit:degC",
+                        "value": null
+                    },
+                    "precipitationLastHour": {
+                        "unitCode": "wmoUnit:mm",
+                        "value": null,
+                        "qualityControl": "Z"
+                    },
+                    "precipitationLast3Hours": {
+                        "unitCode": "wmoUnit:mm",
+                        "value": null,
+                        "qualityControl": "Z"
+                    },
+                    "precipitationLast6Hours": {
+                        "unitCode": "wmoUnit:mm",
+                        "value": null,
+                        "qualityControl": "Z"
+                    },
+                    "relativeHumidity": {
+                        "unitCode": "wmoUnit:percent",
+                        "value": 89.741574390528,
+                        "qualityControl": "V"
+                    },
+                    "windChill": {
+                        "unitCode": "wmoUnit:degC",
+                        "value": 8.41118436073,
+                        "qualityControl": "V"
+                    },
+                    "heatIndex": {
+                        "unitCode": "wmoUnit:degC",
+                        "value": null,
+                        "qualityControl": "V"
+                    },
+                    "cloudLayers": [
+                        {
+                            "base": {
+                                "unitCode": "wmoUnit:m",
+                                "value": 240
+                            },
+                            "amount": "FEW"
+                        },
+                        {
+                            "base": {
+                                "unitCode": "wmoUnit:m",
+                                "value": 610
+                            },
+                            "amount": "BKN"
+                        }
+                    ]
+                }
+            },
+            "id": "ahoy:9237318b-623a-4349-b1fa-2dc983fe9a71"
+        },
+        {
+            "name": "dude",
+            "type": "thing:button",
+            "x": 180,
+            "y": 480,
+            "width": 100,
+            "height": 40,
+            "visible": true,
+            "borderColor": "#000000",
+            "borderWidth": 2,
+            "borderRadius": 4,
+            "backgroundColor": "#efefef",
+            "opacity": 100,
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "textColor": "#000000",
+            "alignHorizontal": "center",
+            "title": "Fetch",
+            "enabled": true,
+            "whenClicked": "fetch('https://api.weather.gov/stations/KSFO/observations/latest')\n  .then(response => response.json())\n  .then(data => fred.value = data)",
+            "id": "ahoy:a40cf0ef-0d2c-48ea-ace9-2636ecf6c801"
+        },
+        {
+            "name": "donut",
+            "type": "thing:label",
+            "x": 320,
+            "y": 480,
+            "width": 260,
+            "height": 40,
+            "visible": true,
+            "borderColor": "#000000",
+            "borderWidth": 0,
+            "borderRadius": 0,
+            "backgroundColor": "#ffffff",
+            "opacity": 100,
+            "fontFamily": "sans-serif",
+            "fontSize": 16,
+            "textColor": "#000000",
+            "alignHorizontal": "center",
+            "alignVertical": "top",
+            "value": "=\"The current temp at SFO is \" + fred.value.properties.temperature.value + \"°C\"",
+            "id": "ahoy:c542a64a-42ae-44bc-9156-e816ff6de807"
+        }
+    ]
+}

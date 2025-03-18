@@ -1,1 +1,1 @@
-# scrappy4life
+# scrappy
